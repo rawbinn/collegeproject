@@ -25,7 +25,7 @@
                       <ul class="nav navbar-nav navbar-left">
                         <li>
                           <form action="{{route('search')}}" id="search">
-                            <input type="text" name="q" class="search-box" placeholder="Search by Name/Address/Email/Phone">
+                            <input type="text" name="q" class="search-box" placeholder="Search by Name/Address/Email/Phone" value="{{Request::get('q')}}">
                           </form>
                         </li>
                       </ul>

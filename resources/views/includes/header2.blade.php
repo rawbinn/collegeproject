@@ -32,6 +32,13 @@
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav navbar-left">
+                        <li>
+                          <form action="{{route('search')}}" id="search">
+                            <input type="text" name="q" class="search-box" placeholder="Search by Name/Address/Email/Phone" value="{{Request::get('q')}}">
+                          </form>
+                        </li>
+                      </ul>
                       <ul class="nav navbar-nav navbar-right">
                         <li><a href="{{url('/')}}">Home</a></li>
                         <li><a href="#">Colleges</a></li>

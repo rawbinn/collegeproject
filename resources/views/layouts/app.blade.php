@@ -41,7 +41,7 @@
       font-size:18px;
     }
     .search-box{
-      width: 360px;
+      width: 300px;
       background: #aeaeae00;
       border-top: 0;
       border-left: 0;
@@ -67,10 +67,10 @@
       opacity: 1; /* Firefox */
     }
     .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
-      background-color: #e7e7e72b;
+      background-color: #8e19e7cf;
     }
     .navbar-dropdown{
-      background: #e7e7e72b;
+      background: #8e19e7cf;
       padding: 10px;
     }
     .navbar-dropdown a{
