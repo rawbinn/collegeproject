@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+@include('includes.header2')
 	<div class="row">
 		<div class="offset-2 col-8">
 			<h3 class="text-center">Your Favorites ({{$favorites->count()}})</h5>

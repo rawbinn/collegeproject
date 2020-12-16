@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+@include('includes.header2')
+<div id="content">
+    <div class="container">
 	<div class="row">
 		<div class="col-4 offset-4">
 			<h2 class="text-center">
@@ -66,4 +69,6 @@
 			</p>
 		</div>
 	</div>
+	</div>
+</div>
 @endsection
