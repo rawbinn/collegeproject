@@ -80,7 +80,7 @@
                                     <img src="{{ Storage::url($college->logo) }}" />
                                 </div>
                                 <div class="col-sm-9">
-                                    <h1>{{ $college->name }}</h1>
+                                    <h1><a href="{{route('college', $college->id)}}">{{ $college->name }}</a></h1>
                                     <div class="contact-det-school">
                                         <i class="fas fa-mobile"></i>{{$college->phone_number}}<br />
                                         <i class="fas fa-map-marker"></i> {{ $college->location }}
