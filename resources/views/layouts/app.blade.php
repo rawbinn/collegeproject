@@ -16,7 +16,7 @@
   <style>
     #slider
     {
-      background-image:url('img/welcome-bg.png');
+      background-image:url({{asset('img/welcome-bg.png')}});
       background-size:cover;
       height:90vh;
       background-attachment:fixed;
@@ -26,13 +26,13 @@
     {
       height:15vh;
       width:100%;
-      background-image:url('img/welcome-bg.png');
+      background-image:url({{asset('img/welcome-bg.png')}});
     }
 
 
     #end-footer 
     {
-      background-image:url('img/footer.png');
+      background-image:url({{asset('img/footer.png')}});
       padding-top:130px;
       padding-bottom:70px;
       margin-top:0px;
@@ -78,6 +78,15 @@
       font-size: 14px !important;
       display: block;
       padding: 4px 0px;
+    }
+    #cover-page-school 
+    {
+      height:150px;
+      background-image:url({{asset('img/welcome-bg.png')}});
+      background-size:cover;
+      background-attachment:fixed;
+      display:inline-block;
+      width:100%;
     }
   </style>
 

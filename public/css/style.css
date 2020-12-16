@@ -787,15 +787,7 @@ input[type=number]::-webkit-outer-spin-button {
 	font-size:18px;
 }
 
-#cover-page-school 
-{
-	height:150px;
-	background-image:url('img/welcome-bg.png');
-	background-size:cover;
-	background-attachment:fixed;
-	display:inline-block;
-	width:100%;
-}
+
 
 #cover-page-school img 
 {

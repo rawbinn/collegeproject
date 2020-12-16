@@ -35,7 +35,7 @@
                       <ul class="nav navbar-nav navbar-left">
                         <li>
                           <form action="{{route('search')}}" id="search">
-                            <input type="text" name="q" class="search-box" placeholder="Search by Name/Address/Email/Phone" value="{{Request::get('q')}}">
+                            <input type="text" name="q" class="search-box" style="width: 250px;" placeholder="Search by Name/Address/Email/Phone" value="{{Request::get('q')}}">
                           </form>
                         </li>
                       </ul>
@@ -45,6 +45,7 @@
                         <li><a href="{{route('about')}}">About</a></li>
                         @guest()
                         <li><a href="{{route('login')}}">Login</a></li>
+                        <li><a href="{{route('register')}}">Register</a></li>
                         @else
                         <li class="nav-item dropdown">
                           <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

@@ -24,7 +24,6 @@
     </div>
 </div>
 
-
 <div id="content-div">
     <img src="{{ asset('img/white-top.png') }}" class="img-responsive" style="width: 100%;"/>
     <div id="video-intro">
