@@ -35,7 +35,7 @@
       background-image:url('img/footer.png');
       padding-top:130px;
       padding-bottom:70px;
-      margin-top:130px;
+      margin-top:0px;
       color:#fff;
       background-size:cover;
       font-size:18px;

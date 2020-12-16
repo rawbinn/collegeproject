@@ -92,7 +92,7 @@
 <div id="courses">
         <div class="container">
             <div class="row">
-                <h1>Featured Coruses</h1>
+                <h1>Featured Courses</h1>
                 
                 <div class="col-sm-4"  data-aos="fade-down" data-offset="300">
                     <a href="#">
@@ -129,7 +129,7 @@
             </div>
         </div>
     </div>
-    <div id="blog">
+    {{-- <div id="blog">
         <div class="container">
             <div class="row">
                 <h1>Latest Blog</h1>
@@ -178,10 +178,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     
     
-    <img src="{{ asset('img/gray-top.png')}}" class="img-responsive" />
+    {{-- <img src="{{ asset('img/gray-top.png')}}" class="img-responsive" />
     <div class="bg-grey">
         <div class="container">
             <div class="row">
@@ -284,22 +284,13 @@
         </div>
     </div>
     <img src="{{ asset('img/gray-bot.png')}}" class="img-responsive" />
-    
+     --}}
     
     <img src="{{ asset('img/gray-top.png')}}" class="img-responsive" />
     <div class="bg-grey" style="padding-top:50px;">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
-                    <h1 class="teacher-sign">Not a Student ?</h1>
-                    <p class="teacher-para">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac dui rutrum, tincidunt mauris bibendum, faucibus massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                    </p>
-                    <div class="text-center">
-                        <a href="#" class="purple-link"  data-aos="fade-up" data-offset="300">Formal Academic Institutions</a>
-                        <a href="#" class="orange-link"  data-aos="fade-left" data-offset="300">Education Service Providers</a>
-                    </div>
-                </div>
+               
             </div>
         </div>
 @endsection
