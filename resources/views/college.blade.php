@@ -171,6 +171,7 @@
 						<div class="vertical-menu">
 						  <a href="#the-intro" class="active">Description</a>
 						  <a href="#single-sec-courses">Courses</a>
+						  <a href="#single-sec-ratings">Ratings</a>
 						  <a href="#single-sec-contact">Contact</a>
 						  
 						</div>
@@ -304,56 +305,29 @@
 							</div><!-- Div ends-->
 							
 							
-							<div id="single-sec-teachers">
+							<div id="single-sec-ratings">
 								<div class="single-sec-title">
-									<h1>Our Teachers</h1>
+									<h1>Ratings</h1>
 								</div>
 								
 								<div class="row">
-									<div class="col-sm-4">
-										<div class="single-teach-col">
-											<img src="{{asset('img/bibek.jpg')}}" />
-											<h2>Bibek Raj Bindra</h2>
-											<h3>Physics, Chemistry</h3>
-										</div>
-									</div>
-									
-									<div class="col-sm-4">
-										<div class="single-teach-col">
-											<img src="{{asset('img/bibek.jpg')}}" />
-											<h2>Bibek Raj Bindra</h2>
-											<h3>Physics, Chemistry</h3>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="single-teach-col">
-											<img src="{{asset('img/bibek.jpg')}}" />
-											<h2>Bibek Raj Bindra</h2>
-											<h3>Physics, Chemistry</h3>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="single-teach-col">
-											<img src="{{asset('img/bibek.jpg')}}" />
-											<h2>Bibek Raj Bindra</h2>
-											<h3>Physics, Chemistry</h3>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="single-teach-col">
-											<img src="{{asset('img/bibek.jpg')}}" />
-											<h2>Bibek Raj Bindra</h2>
-											<h3>Physics, Chemistry</h3>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="single-teach-col">
-											<img src="{{asset('img/bibek.jpg')}}" />
-											<h2>Bibek Raj Bindra</h2>
-											<h3>Physics, Chemistry</h3>
-										</div>
-									</div>
-									
+									@foreach($topics as $topic)
+									 <div class="col-md-3 mt-rating">
+										 <div class="circle">
+											 <p class="rating-number">5</p>
+										 </div>
+										 <p class="rating-caption">{{$topic}}</p>
+										 @if ($user && $user->college()->first() && $user->college()->first()->id === $college->id)
+										 <div class="rating-box">
+											 <input type="radio" name="rating['{{$topic}}']" value="1"> 1 
+											 <input type="radio" name="rating['{{$topic}}']" value="2"> 2
+											 <input type="radio" name="rating['{{$topic}}']" value="3"> 3
+											 <input type="radio" name="rating['{{$topic}}']" value="4"> 4
+											 <input type="radio" name="rating['{{$topic}}']" value="5"> 5
+										 </div>
+										@endif
+									 </div>
+									 @endforeach
 								</div>
 							</div><!-- Div ends-->
 							

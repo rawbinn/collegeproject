@@ -88,6 +88,32 @@
       display:inline-block;
       width:100%;
     }
+    .circle {
+        height: 100px;
+        width: 100px;
+        border: 3px solid;
+        border-radius: 50px;
+        margin: 0 auto;
+    }
+    .circle .rating-number{
+      text-align: center;
+      margin-top: 29px;
+      font-weight: 700;
+      font-size: 25px;
+    }
+    .rating-caption{
+      margin-left: 17px;
+      font-weight: 500;
+      margin-bottom: 0px!important;
+      margin-left: 0px!important;
+      text-align: center !important;
+    }
+    .rating-box{
+      text-align: center;
+    }
+    .mt-rating{
+      margin-top: 25px;
+    }
   </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
